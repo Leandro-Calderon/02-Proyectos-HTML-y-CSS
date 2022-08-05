@@ -1,0 +1,79 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.cards{
+    display: flex;
+    width: 100%;
+    padding: 50px;
+}
+.cards .card{
+    background: rgb(64, 97, 247);
+    color: rgb(252, 252, 252);
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition:all 0.3s ease;
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.4),-4px 0 10px rgba(0,0,0,0.2),-5px 0 10px rgba(0,0,0,0.1);
+}
+.cards .card a{
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.cards .card a:hover{
+    color: lightyellow;
+}
+.cards .card .header{
+    flex:1;
+}
+.cards .card:hover{
+    margin-right: 80px;
+    transform: rotate(3deg) translateY(-15px);
+    -webkit-transform: rotate(3deg) translateY(-15px);
+    -moz-transform: rotate(3deg) translateY(-15px);
+    -ms-transform: rotate(3deg) translateY(-15px);
+    -o-transform: rotate(3deg) translateY(-15px);
+}
+.cards .card .header .date{
+    padding: 10px 0;
+}
+.cards .card .header .title{
+    font-size: 28px;
+}
+.cards .card .footer .author a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cards .card .footer img{
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.cards .card[class*="element"]{
+    margin-left: -100px;
+}
+.element-2:hover,
+.element-3:hover{
+    margin-left: -130px;
+}
