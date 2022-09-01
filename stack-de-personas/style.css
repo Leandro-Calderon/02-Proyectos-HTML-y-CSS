@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+.personas-container {
+  margin: 100px auto;
+  width: 400px;
+  display: flex;
+}
+.personas-container .persona {
+  position: relative;
+  margin-right: -10px;
+  display: inline-flex;
+  flex-direction: column;
+}
+.personas-container .persona img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 2px white;
+  transition: transform 0.3s ease-in-out;
+}
+.personas-container .persona:hover img {
+
+transform: translateY(-2px);
+}
+.personas-container .persona .name {
+  position: absolute;
+  background-color: black;
+  color: white;
+  border: solid 1px white;
+  border-radius: 5px;
+  min-width: 100px;
+  width: 150px;
+  top: -60px;
+  left: calc(-50% -30px);
+  padding: 10px 15px;
+  display: none;
+}
+.personas-container .persona:hover .name {
+    display: inline-block;
+
+}
+.personas-container .persona .text {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100px;
+}
+.personas-container .persona .text::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: solid 10px black;
+  border-bottom: solid 10px transparent;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+  left: calc(50%-10px);
+  bottom: -20px;
+}
