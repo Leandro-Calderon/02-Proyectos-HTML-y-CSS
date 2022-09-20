@@ -1,0 +1,18 @@
+/* Error: Undefined variable.
+ *    ,
+ * 18 |     @include btn($primary-color, $secondary-color, "true");
+ *    |                  ^^^^^^^^^^^^^^
+ *    '
+ *   src/_button.scss 18:18  @import
+ *   src/main.scss 1:9       root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Undefined variable.\a    \2577 \a 18 \2502      @include btn($primary-color, $secondary-color, "true");\a    \2502                   ^^^^^^^^^^^^^^\a    \2575 \a   src/_button.scss 18:18  @import\a   src/main.scss 1:9       root stylesheet';
+}
